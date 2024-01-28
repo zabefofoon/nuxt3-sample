@@ -8,8 +8,8 @@ export class HashTag {
   /** 해시태그의 상품 목록 */
   productNos?: number[]
 
-  toJSON() {
-    return JSON.parse(JSON.stringify(this)) // here I make a POJO's copy of the class instance
+  get test() {
+    return `${this.hashtagName} + 1`
   }
 
   constructor(rawHashTag: Partial<HashTag>) {

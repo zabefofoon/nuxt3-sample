@@ -11,5 +11,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   experimental: {
     payloadExtraction: false,
+    renderJsonPayloads: true
   },
+  vite: {
+    esbuild: {
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true,
+        },
+      }
+    }
+  }
 })

@@ -46,7 +46,5 @@ const fetchRandomNumber = async () => {
 }
 </script>
 <style scoped lang="scss">
-.mt-\[80px\] {
-  margin-top: 80px;
-}
+
 </style>
