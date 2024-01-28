@@ -6,9 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import apiConfig from '~/api/api.config'
 
-const { data } = useAsyncData('fetchHashtag', () =>
-  apiConfig.jsonClient('/api/hashtag/96')
-)
+const hashtagStore = useHashtagStore()
+
+const { data } = useAsyncData('fetchHashtag', () => hashtagStore.gethashtag(96))
 </script>
