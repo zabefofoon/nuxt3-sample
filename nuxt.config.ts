@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/main.scss'],
   modules: ['@pinia/nuxt'],
   routeRules: {
-    '/mypage/**': { ssr: false },
+    '/mypage/**': { ssr: false }
   },
   devServer: {
-    port: 8091,
+    port: 8091
   },
   devtools: { enabled: true },
   experimental: {
@@ -17,8 +17,8 @@ export default defineNuxtConfig({
     esbuild: {
       tsconfigRaw: {
         compilerOptions: {
-          experimentalDecorators: true,
-        },
+          experimentalDecorators: true
+        }
       }
     }
   }
