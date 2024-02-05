@@ -33,7 +33,7 @@ import apiConfig from '~/api/api.config'
 // ssr 사용한다면 useAsyncData
 // 데이터를 서버로부터 불러오고 난 후, create
 const { data, refresh } = await useAsyncData('fetchInitData', () =>
-  apiConfig.jsonClient<number>('/api/sample/test/init')
+  apiConfig.jsonClient<number>('/api/v3/display2/hashtags/96')
 )
 
 const fetchedRandomNumber = ref(0)
